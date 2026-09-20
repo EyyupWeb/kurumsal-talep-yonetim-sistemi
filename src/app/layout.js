@@ -2,9 +2,9 @@ import "./globals.css";
 import AuthProvider from "@/base/authProvider";
 
 export const metadata = {
-  title: "ITDesk — IT Destek Talep Sistemi",
+  title: "KTYS — Kurumsal Talep Yönetim Sistemi",
   description:
-    "Minimalist IT destek talep yönetim paneli. Talep oluşturun, takip edin.",
+    "Kurumsal talep yönetim paneli. Talep oluşturun, takip edin.",
 };
 
 export default function RootLayout({ children }) {

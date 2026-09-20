@@ -32,34 +32,34 @@ export default function GirisPage() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center px-4">
+    <div className="flex min-h-screen items-center justify-center px-4 py-8 sm:py-4">
       <div className="w-full max-w-md">
-        <div className="mb-8 text-center">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-lg shadow-indigo-200">
+        <div className="mb-6 sm:mb-8 text-center">
+          <div className="mx-auto mb-3 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 shadow-lg shadow-indigo-200">
             <svg
-              className="h-7 w-7 text-white"
+              className="h-6 w-6 sm:h-7 sm:w-7 text-white"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={2}
+              strokeWidth={1.8}
               stroke="currentColor"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z"
+                d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
               />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
-            ITDesk
+          <h1 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
+            KTYS
           </h1>
-          <p className="mt-1 text-sm text-gray-400">
-            Kurumsal Talep Yönetim Sistemine giriş yapın
+          <p className="mt-1 text-xs sm:text-sm text-gray-400">
+            Kurumsal Talep Yönetim Sistemi
           </p>
         </div>
 
-        <div className="rounded-2xl bg-white p-8 shadow-md ring-1 ring-gray-100">
-          <form onSubmit={handleSubmit} className="space-y-5">
+        <div className="rounded-2xl bg-white p-5 sm:p-8 shadow-md ring-1 ring-gray-100">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-1.5">
                 E-posta
@@ -128,25 +128,6 @@ export default function GirisPage() {
             </button>
           </form>
 
-          <div className="mt-6 rounded-xl bg-gray-50 px-4 py-3 ring-1 ring-gray-100">
-            <p className="text-xs font-semibold text-gray-500 mb-2">
-              Varsayılan admin hesabı
-            </p>
-            <div className="space-y-1.5">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-500">E-posta:</span>
-                <code className="rounded-md bg-white px-2 py-0.5 text-xs font-medium text-indigo-600 ring-1 ring-gray-200">
-                  it@internationalplus.com
-                </code>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-500">Şifre:</span>
-                <code className="rounded-md bg-white px-2 py-0.5 text-xs font-medium text-indigo-600 ring-1 ring-gray-200">
-                  123
-                </code>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
